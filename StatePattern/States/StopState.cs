@@ -5,7 +5,7 @@ namespace StatePattern.States
     public class StopState:IState
 
     {
-        public void DoAction(Context context)
+        public void Handle(Context context)
         {
             System.Console.WriteLine("Player is in Stop State");
             context.SetState(this);

@@ -8,15 +8,16 @@ namespace StatePattern
         static void Main(string[] args)
         {
             var context = new Context();
-            var startState = new StartState();
-            startState.DoAction(context);
 
-            Console.WriteLine(context.ToString());
+            var startState = new StartState();
+            startState.Handle(context);
+
+            Console.WriteLine(context.GetState().ToString());
 
             var stopState = new StopState();
-            stopState.DoAction(context);
+            stopState.Handle(context);
 
-            Console.WriteLine(context.ToString());
+            Console.WriteLine(context.GetState().ToString());
 
             Console.ReadKey();
         }

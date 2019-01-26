@@ -2,6 +2,6 @@
 {
      public interface IState
      {
-         void DoAction(Context context);
+         void Handle(Context context);
      }
 }
