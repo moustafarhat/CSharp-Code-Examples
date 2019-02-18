@@ -7,7 +7,7 @@ namespace SmokeTestTool
 {
     public class Initalizer
     {
-        private readonly TestBase _testBase=new Service1();
+        private static readonly TestBase _testBase=new Service1();
 
         private Initalizer() { }
 
@@ -19,6 +19,7 @@ namespace SmokeTestTool
             // You can call this static method which calls the singleton instance method.
             public static void DoSomeWork()
             {
+                _testBase.GetNewService();
                 Instance.DoWork();
             }
 
