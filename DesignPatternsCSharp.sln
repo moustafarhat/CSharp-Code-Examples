@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "Depe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactoryPattern", "AbstractFactoryPattern\AbstractFactoryPattern.csproj", "{73FA2ED7-8AF7-4616-A804-8B0FD3C3FF51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDPrinciples", "SOLIDPrinciples\SOLIDPrinciples.csproj", "{9DC38F65-C570-47AD-B014-0DEA27B05378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLIDPrinciples", "SOLIDPrinciples\SOLIDPrinciples.csproj", "{9DC38F65-C570-47AD-B014-0DEA27B05378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderDesignPattern", "BuilderDesignPattern\BuilderDesignPattern.csproj", "{8D6B5B76-0598-4801-A49A-EF3003586A46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{9DC38F65-C570-47AD-B014-0DEA27B05378}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DC38F65-C570-47AD-B014-0DEA27B05378}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DC38F65-C570-47AD-B014-0DEA27B05378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6B5B76-0598-4801-A49A-EF3003586A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6B5B76-0598-4801-A49A-EF3003586A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6B5B76-0598-4801-A49A-EF3003586A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6B5B76-0598-4801-A49A-EF3003586A46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

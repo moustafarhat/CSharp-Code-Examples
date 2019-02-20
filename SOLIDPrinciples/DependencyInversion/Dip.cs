@@ -1,14 +1,20 @@
 ﻿using System;
 using System.IO;
-using Solid;
 
 namespace SOLIDPrinciples.DependencyInversion
 {
-    class Dip : IPrinciple
+    internal class Dip : IPrinciple
     {
         public string Principle()
         {
             return "Dependency Inversion";
+        }
+
+        // e.g. when it is used:
+        private void UseDependencyInjectionForLogger()
+        {
+            var customer = new BetterCustomer(new EmailLogger());
+            customer.Add(new Database());
         }
 
         internal class FileLogger
@@ -19,13 +25,12 @@ namespace SOLIDPrinciples.DependencyInversion
             }
         }
 
-
         // Bad: We are relying on the customer to say that we 
         // are using a File Logger, rather than another type of
         // logger, e.g. EmailLogger.
         internal class Customer
         {
-            readonly FileLogger _logger = new FileLogger();
+            private readonly FileLogger _logger = new FileLogger();
 
             public void Add(Database db)
             {
@@ -43,12 +48,13 @@ namespace SOLIDPrinciples.DependencyInversion
 
         // Good: We pass in a Logger interface to the customer
         // so it doesnt know what type of logger it is
-        class BetterCustomer
+        private class BetterCustomer
         {
-            private ILogger logger;
+            private readonly ILogger _logger;
+
             public BetterCustomer(ILogger logger)
             {
-                this.logger = logger;
+                _logger = logger;
             }
 
             public void Add(Database db)
@@ -59,11 +65,12 @@ namespace SOLIDPrinciples.DependencyInversion
                 }
                 catch (Exception error)
                 {
-                    logger.Handle(error.ToString());
+                    _logger.Handle(error.ToString());
                 }
             }
         }
-        class EmailLogger : ILogger
+
+        private class EmailLogger : ILogger
         {
             public void Handle(string error)
             {
@@ -71,16 +78,9 @@ namespace SOLIDPrinciples.DependencyInversion
             }
         }
 
-        interface ILogger
+        private interface ILogger
         {
             void Handle(string error);
-        }
-
-        // e.g. when it is used:
-        void UseDependencyInjectionForLogger()
-        {
-            var customer = new BetterCustomer(new EmailLogger());
-             customer.Add(new Database());
         }
     }
 }
