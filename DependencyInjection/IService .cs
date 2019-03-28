@@ -23,6 +23,6 @@ namespace DependencyInjection
         {
             this._service = service;
         }
-        public ServeMethod() { this._service.Serve(); }
+        //public ServeMethod() { this._service.Serve(); }
     }
 }
