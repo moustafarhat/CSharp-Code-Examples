@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+/*
+    The main TypeConversion class
+    Contains all methods for performing basic  functions
+*/
 namespace TypeConversion
 {
     class Program
