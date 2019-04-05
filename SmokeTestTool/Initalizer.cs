@@ -23,12 +23,9 @@ namespace SmokeTestTool
                 Instance.DoWork();
             }
 
-            public static Initalizer Instance
-            {
-                get { return instance; }
-            }
+            public static Initalizer Instance => instance;
 
-            private static Initalizer instance = new Initalizer();
+            private static readonly Initalizer instance = new Initalizer();
         }
     
 }

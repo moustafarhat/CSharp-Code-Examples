@@ -1,0 +1,28 @@
+UnitedStatesDollar	USD
+Euro			EUR
+JapaneseYen		JPY 
+PoundSterling		GBP 
+AustralianDollar	AUD 
+CanadianDollar		CAD 
+SwissFranc		CHF 
+Renminbi		CNY
+SwedishKrona		SEK 
+NewZealandDollar	NZD 
+MexicanPeso		MXN 
+SingaporeDollar		SGD 
+HongKongDollar		HKD
+NorwegianKrone		NOK 
+SouthKoreanWon		KRW
+TurkishLira		TRY
+RussianRuble		RUB
+IndianRupee		INR
+EgyptianPound		EGP
+BrazilianReal		BRL
+SouthAfricanRand	ZAR
+UAEDirham		AED
+TunisiaTunisianDinar	TND
+SaudiArabiaRiyal	SAR
+RomaniaRomanianLeu	RON
+PolandPolishZloty	PLN
+
+

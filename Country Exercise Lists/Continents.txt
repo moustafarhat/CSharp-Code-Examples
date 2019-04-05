@@ -1,0 +1,7 @@
+Asia,
+Africa,
+Antarctica,
+Australia,
+Europe,
+NorthAmerica,
+SouthAmerica
