@@ -10,7 +10,7 @@ namespace BasicAlgorithmExercises
 
         public static bool CheckNzmber(int x, int y)
         {
-            return (x == 50) || (y == 50) || (x + y == 50);
+            return x == 50 || (y == 50) || (x + y == 50);
         }
     }
 }
