@@ -1,0 +1,8 @@
+	
+
+- Create class called movies
+- Contains movie name, director, rate, release date
+- use rate as a double and float, and release date as date time and int (year only).
+- Create instances of any movie with many volumes (Lord of the rings , Dark knight..etc).
+- Start adding the information about each movie.
+- Create two lists and add the different movies volumes to the list.

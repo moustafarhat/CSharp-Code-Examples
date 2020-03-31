@@ -1,0 +1,12 @@
+	
+
+1. Create struct called Animals and another one called Trainers.
+2. Animals struct should contain one variable called name and property with the same name.
+3. Animals struct should contain two methods SayHi() and Feed().
+4. Trainers struct should contain one variable called trainerName and property with same name.
+5. Trainers struct should contain one method called SayHi().
+6. Create 3 instances of Animals struct and one of Trainers.
+7. Create 1 ArrayList and add the 3 animals to the list.
+8. Loop through the list with the different animals and call the SayHi() method.
+9. Now add the trainer instance to the list.
+10. Loop through the list which now contains different structs (Animals and Trainers)

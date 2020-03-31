@@ -1,0 +1,8 @@
+
+
+1. Create a class called Animals.
+2. Animals class should contain one variable called name and property with the same name.
+3. Animals class should contain two methods SayHi() and Feed().
+4. Create 3 instances of Animals class.
+5. Create a list and add the 3 animals to the list.
+6. Loop through the list with the different animals and call the SayHi() method.
