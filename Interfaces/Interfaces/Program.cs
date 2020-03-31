@@ -1,15 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    internal class Program
+    class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
             Dogs dog = new Dogs();
             dog.Attack();
             dog.SayHi();
             dog.Run();
+            
         }
     }
 
@@ -21,9 +26,7 @@ namespace Interfaces
     public interface IDogCommands : IAnimals
     {
         void Stay();
-
         void Sit();
-
         void Attack();
 
         string DogName
@@ -33,13 +36,14 @@ namespace Interfaces
         }
     }
 
-    internal interface Trainer
+    interface Trainer
     {
+
     }
 
-    internal class Animals
+    class Animals
     {
-        private string AnimalName;
+        string AnimalName;
 
         public void SayHi()
         {
@@ -47,7 +51,7 @@ namespace Interfaces
         }
     }
 
-    internal class Dogs : Animals, IDogCommands, Trainer
+    class Dogs : Animals, IDogCommands, Trainer
     {
         private string DogBreed;
 

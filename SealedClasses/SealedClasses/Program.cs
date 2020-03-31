@@ -8,7 +8,7 @@
         }
     }
 
-    internal sealed class Animal
+    internal class Animal
     {
         public string name;
     }
