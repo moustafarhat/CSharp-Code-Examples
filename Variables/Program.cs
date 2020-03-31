@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Variables
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int x = 2;
             Console.WriteLine("Number x is " + x);
@@ -23,15 +19,14 @@ namespace Variables
             float_num = 5.5f;
             decimal_num = 100.250m;
 
-            Console.WriteLine("Double is " + double_num + " float is " + float_num + " decimal is "+decimal_num);
+            Console.WriteLine("Double is " + double_num + " float is " + float_num + " decimal is " + decimal_num);
 
             string lastName, House;
             var firstName = "Jon";
             lastName = " Snow";
             House = "Stark";
 
-
-            Console.Write("Hello, " + firstName +  lastName + " of House Stark");
+            Console.Write("Hello, " + firstName + lastName + " of House Stark");
 
             bool IsWorking;
 

@@ -2,23 +2,21 @@
 
 namespace DecoratorPattern
 {
-
-
-    class Program
+    internal class Program
     {
-
-        /// <summary>   
-        /// Car Base component   
-        /// </summary>   
+        /// <summary>
+        /// Car Base component
+        /// </summary>
         public interface ICar
         {
             string GetDescription();
+
             double GetCost();
         }
 
-        /// <summary>   
-        /// Concrete Car   
-        /// </summary>   
+        /// <summary>
+        /// Concrete Car
+        /// </summary>
         public class EconomyCar : ICar
         {
             public string GetDescription()
@@ -32,9 +30,9 @@ namespace DecoratorPattern
             }
         }
 
-        /// <summary>   
-        /// Concrete Car   
-        /// </summary>   
+        /// <summary>
+        /// Concrete Car
+        /// </summary>
         public class DeluxCar : ICar
         {
             public string GetDescription()
@@ -48,9 +46,9 @@ namespace DecoratorPattern
             }
         }
 
-        /// <summary>   
-        /// Concrete Car   
-        /// </summary>   
+        /// <summary>
+        /// Concrete Car
+        /// </summary>
         public class LuxuryCar : ICar
         {
             public string GetDescription()
@@ -64,18 +62,18 @@ namespace DecoratorPattern
             }
         }
 
-        /// <summary>   
-        /// Abstract Decorator   
-        /// </summary>   
+        /// <summary>
+        /// Abstract Decorator
+        /// </summary>
         public abstract class CarAccessoriesDecorator : ICar
         {
-
             private ICar _car;
 
             public CarAccessoriesDecorator(ICar aCar)
             {
                 this._car = aCar;
             }
+
             public virtual string GetDescription()
             {
                 return this._car.GetDescription();
@@ -87,21 +85,19 @@ namespace DecoratorPattern
             }
         }
 
-        /// <summary>   
-        /// Concrete Decorator   
-        /// </summary>   
+        /// <summary>
+        /// Concrete Decorator
+        /// </summary>
         public class BasicAccessories : CarAccessoriesDecorator
         {
             public BasicAccessories(ICar aCar)
             : base(aCar)
             {
-
             }
 
             public override string GetDescription()
             {
                 return base.GetDescription() + ",Basic Accessories Package";
-
             }
 
             public override double GetCost()
@@ -110,15 +106,14 @@ namespace DecoratorPattern
             }
         }
 
-        /// <summary>   
-        /// Concrete Decorator   
-        /// </summary>   
+        /// <summary>
+        /// Concrete Decorator
+        /// </summary>
         public class AdvancedAccessories : CarAccessoriesDecorator
         {
             public AdvancedAccessories(ICar aCar)
             : base(aCar)
             {
-
             }
 
             public override string GetDescription()
@@ -132,15 +127,14 @@ namespace DecoratorPattern
             }
         }
 
-        /// <summary>   
-        /// Concrete Decorator   
-        /// </summary>   
+        /// <summary>
+        /// Concrete Decorator
+        /// </summary>
         public class SportsAccessories : CarAccessoriesDecorator
         {
             public SportsAccessories(ICar aCar)
             : base(aCar)
             {
-
             }
 
             public override string GetDescription()
@@ -167,17 +161,15 @@ namespace DecoratorPattern
             }
         }
 
-
-
-    static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            //Create EcomomyCar instance.   
+            //Create EcomomyCar instance.
             ICar objCar = new EconomyCar();
 
-            //Wrp EconomyCar instancw with BasicAccessories.   
+            //Wrp EconomyCar instancw with BasicAccessories.
             CarAccessoriesDecorator objAccessoriesDecorator = new BasicAccessories(objCar);
 
-            //Wrap EconomyCar instance with AdvancedAccessories instance.   
+            //Wrap EconomyCar instance with AdvancedAccessories instance.
             objAccessoriesDecorator = new AdvancedAccessories(objAccessoriesDecorator);
 
             Console.Write("Car Detials: " + objAccessoriesDecorator.GetDescription());
@@ -187,6 +179,4 @@ namespace DecoratorPattern
             Console.Read();
         }
     }
-
-
 }

@@ -2,10 +2,10 @@
 
 namespace AbstractFactoryPattern.Example1.Nokia
 {
-    /// <summary>  
-    /// The 'ProductA1' class  
-    /// </summary>  
-    class NokiaPixel : ISmartPhone
+    /// <summary>
+    /// The 'ProductA1' class
+    /// </summary>
+    internal class NokiaPixel : ISmartPhone
     {
         public string GetModelDetails()
         {

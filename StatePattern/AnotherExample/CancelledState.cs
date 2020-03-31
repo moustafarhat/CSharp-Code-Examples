@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using StatePattern.AnotherExample.Interface;
+﻿using StatePattern.AnotherExample.Interface;
+using System;
 
 namespace StatePattern.AnotherExample
 {
-   public  class CancelledState : IOrderState
+    public class CancelledState : IOrderState
     {
         public bool CanShip(Order order)
         {

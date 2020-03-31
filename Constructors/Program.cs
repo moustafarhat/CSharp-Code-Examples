@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Classes
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Person perOne = new Person();
-            
+
             perOne.FirstName = "Ahmad";
             perOne.LastName = "Mohey";
             perOne.Country = "Egypt";
@@ -29,12 +25,12 @@ namespace Classes
         }
     }
 
-    class Person
+    internal class Person
     {
-        string firstName;
-        string lastName;
-        DateTime birthDate;
-        string country;
+        private string firstName;
+        private string lastName;
+        private DateTime birthDate;
+        private string country;
 
         public string FirstName
         {

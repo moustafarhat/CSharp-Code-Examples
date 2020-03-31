@@ -2,7 +2,7 @@
 
 namespace Solid.OpenClosed
 {
-    class Ocp : IPrinciple
+    internal class Ocp : IPrinciple
     {
         public string Principle()
         {

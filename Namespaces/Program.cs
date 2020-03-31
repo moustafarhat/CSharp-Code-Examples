@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MyOwnNamespace.GameOfThrones;
+﻿using MyOwnNamespace.GameOfThrones;
+using System;
 
 namespace Namespaces
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             System.Console.WriteLine();
             MyOwnNamespace.Animal animal = new MyOwnNamespace.Animal();
@@ -22,7 +18,7 @@ namespace Namespaces
 
 namespace MyOwnNamespace
 {
-    class Animal
+    internal class Animal
     {
         public string animalColor;
 
@@ -32,13 +28,13 @@ namespace MyOwnNamespace
         }
     }
 
-    class Trainers
+    internal class Trainers
     {
     }
 
     namespace GameOfThrones
     {
-        class HouseStark
+        internal class HouseStark
         {
             public static void sayQuote()
             {

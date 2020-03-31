@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CompositePattern
+﻿namespace CompositePattern
 {
     public abstract class Component
     {
-        protected Component() { }
+        protected Component()
+        {
+        }
 
         public abstract void Operation();
 

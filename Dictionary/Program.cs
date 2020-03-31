@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace Dictionary
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var dictionary = new Dictionary<int, Customer>();
-            var m= new Customer();
-            dictionary.Add(1,m);
+            var m = new Customer();
+            dictionary.Add(1, m);
 
-            // Return the customer with ID 1234 
+            // Return the customer with ID 1234
             var customer = dictionary[1];
 
             // Removing an object by its key
@@ -26,7 +26,7 @@ namespace Dictionary
 
             var containsValue = dictionary.ContainsValue(m);
 
-            // Iterate over keys 
+            // Iterate over keys
             foreach (var key in dictionary.Keys)
                 Console.WriteLine(dictionary[key]);
 

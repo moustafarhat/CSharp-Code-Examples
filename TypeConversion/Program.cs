@@ -1,13 +1,15 @@
 ﻿using System;
+
 /*
     The main TypeConversion class
     Contains all methods for performing basic  functions
 */
+
 namespace TypeConversion
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int serialNo = 150;
             string accountNo = "";

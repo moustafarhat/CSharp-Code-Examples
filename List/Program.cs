@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace List
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var list = new List<int>();
 
@@ -33,13 +33,12 @@ namespace List
             // Check to see if the list contains an item
             var contains = list.Contains(4);
 
-            // Return the number of items in the list 
+            // Return the number of items in the list
             var count = list.Count;
 
             // Iterate over all objects in a list
             foreach (var item in list)
                 Console.WriteLine(item);
-
         }
     }
 }

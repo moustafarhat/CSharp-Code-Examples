@@ -1,9 +1,9 @@
 ﻿namespace AbstractFactoryPattern.Example1.interfaces
 {
-    /// <summary>  
-    /// The 'AbstractProductB' interface  
-    /// </summary>  
-    interface INormalPhone
+    /// <summary>
+    /// The 'AbstractProductB' interface
+    /// </summary>
+    internal interface INormalPhone
     {
         string GetModelDetails();
     }

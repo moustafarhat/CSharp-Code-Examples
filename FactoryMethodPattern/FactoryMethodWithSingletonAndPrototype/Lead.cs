@@ -17,7 +17,7 @@ namespace FactoryMethodPattern.FactoryMethodWithSingletonAndPrototype
 
         public ICustomer Clone()
         {
-            return (ICustomer) MemberwiseClone();
+            return (ICustomer)MemberwiseClone();
         }
     }
 }

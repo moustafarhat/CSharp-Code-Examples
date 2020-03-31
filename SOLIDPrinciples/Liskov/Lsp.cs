@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Solid;
 
 namespace SOLIDPrinciples.Liskov
 {
-    class Lsp : IPrinciple
+    internal class Lsp : IPrinciple
     {
         public string Principle()
         {
@@ -15,7 +14,7 @@ namespace SOLIDPrinciples.Liskov
         // The parent should easily the replace the child object and not break any functionality, only lose some.
         // e.g. here, we don't want this to add an enquiry so we have to throw
         // a new exception, that is violating the principle
-        class Enquiry : Customer
+        private class Enquiry : Customer
         {
             public override int Discount(int sales)
             {
@@ -27,6 +26,7 @@ namespace SOLIDPrinciples.Liskov
                 throw new Exception("Not allowed");
             }
         }
+
         // e.g. to show how this is bad:
         public class GoldCustomer : Customer
         {
@@ -44,15 +44,15 @@ namespace SOLIDPrinciples.Liskov
             }
         }
 
-        class ViolatingLiskovs
+        private class ViolatingLiskovs
         {
             public void ParseCustomers()
             {
                 var database = new Database();
                 var customers = new List<Customer>
                 {
-                    new GoldCustomer(), 
-                    new SilverCustomer(), 
+                    new GoldCustomer(),
+                    new SilverCustomer(),
                     new Enquiry() // This is valid
                 };
 
@@ -65,12 +65,12 @@ namespace SOLIDPrinciples.Liskov
         }
 
         // Better method:
-        interface IDiscount
+        private interface IDiscount
         {
             int Discount(int sales);
         }
 
-        interface IDatabase
+        private interface IDatabase
         {
             void Add(Database db);
         }
@@ -105,7 +105,7 @@ namespace SOLIDPrinciples.Liskov
         }
 
         // GOOD: Now, we don't violate Liskov Substitution principle
-        class AdheringToLiskovs
+        private class AdheringToLiskovs
         {
             public void ParseCustomers()
             {
@@ -124,7 +124,5 @@ namespace SOLIDPrinciples.Liskov
                 }
             }
         }
-
     }
-
 }

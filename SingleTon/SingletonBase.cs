@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SingleTon
 {
@@ -18,7 +16,7 @@ namespace SingleTon
         /// </summary>
         private static readonly Lazy<T> SInstance = new Lazy<T>(CreateInstanceOfT);
 
-        #endregion
+        #endregion Members
 
         #region Properties
 
@@ -27,7 +25,7 @@ namespace SingleTon
         /// </summary>
         public static T Instance => SInstance.Value;
 
-        #endregion
+        #endregion Properties
 
         #region Methods
 
@@ -40,6 +38,6 @@ namespace SingleTon
             return Activator.CreateInstance(typeof(T), true) as T;
         }
 
-        #endregion
+        #endregion Methods
     }
 }

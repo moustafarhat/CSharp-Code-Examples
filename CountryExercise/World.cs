@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WorldNamespace
 {
-    abstract class World
+    internal abstract class World
     {
         private string planetName;
         private Continents continents;
-        
+
         public string PlanetName
         {
             get { return planetName; }
@@ -24,7 +20,7 @@ namespace WorldNamespace
         }
     }
 
-    class Country : World
+    internal class Country : World
     {
         private string countryName;
         private string capital;
@@ -58,7 +54,7 @@ namespace WorldNamespace
         public Country()
         {
             CountryName = "Unknown";
-            Capital = "Unknown";   
+            Capital = "Unknown";
         }
 
         public void SayHi()
@@ -72,7 +68,7 @@ namespace WorldNamespace
         }
     }
 
-    struct CountryLanguages
+    internal struct CountryLanguages
     {
         private string firstLanguage;
         private string secondLanguage;
@@ -80,7 +76,7 @@ namespace WorldNamespace
         public string FirstLanguage
         {
             get { return firstLanguage; }
-            set { firstLanguage= value; }
+            set { firstLanguage = value; }
         }
 
         public string SecondLanguage
@@ -90,8 +86,7 @@ namespace WorldNamespace
         }
     }
 
-
-    enum Continents
+    internal enum Continents
     {
         Asia,
         Africa,
@@ -102,7 +97,7 @@ namespace WorldNamespace
         SouthAmerica
     }
 
-    enum Currencies
+    internal enum Currencies
     {
         USD,
         EUR,
@@ -132,7 +127,7 @@ namespace WorldNamespace
         PLN
     }
 
-    enum Languages
+    internal enum Languages
     {
         Arabic,
         Azerbaijani,

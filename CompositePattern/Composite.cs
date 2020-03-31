@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CompositePattern
 {
-    internal class Composite :Component
+    internal class Composite : Component
     {
-        readonly List<Component> _children = new List<Component>();
+        private readonly List<Component> _children = new List<Component>();
 
         public Composite()
         {
-
         }
 
         public override void Add(Component component)

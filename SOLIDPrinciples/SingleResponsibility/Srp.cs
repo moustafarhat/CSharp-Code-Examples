@@ -1,10 +1,9 @@
 ﻿using System;
 using System.IO;
-using Solid;
 
 namespace SOLIDPrinciples.SingleResponsibility
 {
-    class Srp : IPrinciple
+    internal class Srp : IPrinciple
     {
         public string Principle()
         {
@@ -32,13 +31,14 @@ namespace SOLIDPrinciples.SingleResponsibility
 
     // Good Way, not violating the single responsibility principle
     // Now we abstract the logger, so its just writing the error.
-    class CustomerBetter
+    internal class CustomerBetter
     {
         private readonly FileLogger _logger = new FileLogger();
 
         public void Add(Database db)
         {
-            try {
+            try
+            {
                 db.Add();
             }
             catch (Exception ex)
@@ -47,6 +47,7 @@ namespace SOLIDPrinciples.SingleResponsibility
             }
         }
     }
+
     internal class FileLogger
     {
         public void Handle(string error)
@@ -59,7 +60,7 @@ namespace SOLIDPrinciples.SingleResponsibility
     // Even better, the customer only knows how to add, and we
     // wrap the add method in an error handler.
     // @see Utilities/Customer
-    class Wrapper
+    internal class Wrapper
     {
         public void HandleAdd(FileLogger logger, Database db, Customer customer)
         {
@@ -73,5 +74,4 @@ namespace SOLIDPrinciples.SingleResponsibility
             }
         }
     }
-
 }

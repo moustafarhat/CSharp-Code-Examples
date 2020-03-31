@@ -1,5 +1,6 @@
 ﻿using CommandsPattern;
 using Xunit;
+
 namespace DesignPatternsCSharp.Tests
 {
     public class TestTransactionManager
@@ -50,7 +51,7 @@ namespace DesignPatternsCSharp.Tests
 
             transactionManager.ProcessPendingTransactions();
 
-            // The withdrawal of 100 was not completed, 
+            // The withdrawal of 100 was not completed,
             // because there was not enough money in the account.
             // So, it is still pending.
             Assert.True(transactionManager.HasPendingTransactions);

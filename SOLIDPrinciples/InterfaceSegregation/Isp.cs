@@ -1,8 +1,6 @@
-﻿using Solid;
-
-namespace SOLIDPrinciples.InterfaceSegregation
+﻿namespace SOLIDPrinciples.InterfaceSegregation
 {
-    class Isp : IPrinciple
+    internal class Isp : IPrinciple
     {
         public string Principle()
         {
@@ -11,25 +9,27 @@ namespace SOLIDPrinciples.InterfaceSegregation
 
         // If we want to add more functionality, don't add to existing
         // interfaces, segregate them out.
-        interface ICustomer // existing
+        private interface ICustomer // existing
         {
             void Add();
         }
+
         // BAD:
-        interface ICustomerImproved
+        private interface ICustomerImproved
         {
             void Add();
+
             void Read(); // Existing Functionality, BAD
         }
 
         // GOOD:
         // Just create another interface, that a class can ALSO extend from
-        interface ICustomerV1 : ICustomer
+        private interface ICustomerV1 : ICustomer
         {
             void Read();
         }
 
-        class CustomerWithRead : ICustomer, ICustomerV1
+        private class CustomerWithRead : ICustomer, ICustomerV1
         {
             public void Add()
             {
@@ -44,7 +44,7 @@ namespace SOLIDPrinciples.InterfaceSegregation
         }
 
         // e.g.
-        void ManipulateCustomers()
+        private void ManipulateCustomers()
         {
             var database = new Database();
             var customer = new Customer();

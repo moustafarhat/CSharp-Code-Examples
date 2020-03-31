@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CompositePattern
 {
-    class Leaf :Component
+    internal class Leaf : Component
     {
         public Leaf()
         {
-
         }
 
         public override void Operation()

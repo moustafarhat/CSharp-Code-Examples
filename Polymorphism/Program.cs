@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Polymorphism
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Shapes[] shapes = new Shapes[4];
             shapes[0] = new Shapes();
@@ -23,7 +19,7 @@ namespace Polymorphism
         }
     }
 
-    class Shapes
+    internal class Shapes
     {
         public virtual void Draw()
         {
@@ -31,7 +27,7 @@ namespace Polymorphism
         }
     }
 
-    class Circles : Shapes
+    internal class Circles : Shapes
     {
         public new void Draw()
         {
@@ -39,7 +35,7 @@ namespace Polymorphism
         }
     }
 
-    class Lines : Shapes
+    internal class Lines : Shapes
     {
         public override void Draw()
         {
@@ -47,7 +43,7 @@ namespace Polymorphism
         }
     }
 
-    class Triangle : Shapes
+    internal class Triangle : Shapes
     {
         public override void Draw()
         {

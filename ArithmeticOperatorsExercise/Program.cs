@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ArithmeticOperatorsExercise
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int x, y;
-            int add, sub, mult,rem;
+            int add, sub, mult, rem;
             float div;
 
             Console.WriteLine("Enter no. 1");

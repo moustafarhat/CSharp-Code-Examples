@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StrategyPattern.Operations
+﻿namespace StrategyPattern.Operations
 {
-    class SubOperation : IOperation
+    internal class SubOperation : IOperation
     {
         public float MathOperation(int x, int y)
         {

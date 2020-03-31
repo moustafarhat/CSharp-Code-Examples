@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Dictionary
+﻿namespace Dictionary
 {
-    class Customer
+    internal class Customer
     {
         public int Id;
     }

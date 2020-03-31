@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AbstractFactoryPattern.Example1.interfaces;
+﻿using AbstractFactoryPattern.Example1.interfaces;
 
 namespace AbstractFactoryPattern.Example1
 {
-    /// <summary>  
-    /// The 'Client' class  
-    /// </summary>  
-    class MobileClient
+    /// <summary>
+    /// The 'Client' class
+    /// </summary>
+    internal class MobileClient
     {
         private readonly ISmartPhone _smartPhone;
         private readonly INormalPhone _normalPhone;

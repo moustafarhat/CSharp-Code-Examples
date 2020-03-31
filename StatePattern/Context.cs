@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using StatePattern.@interface;
+﻿using StatePattern.@interface;
 
 namespace StatePattern
 {
@@ -23,6 +20,5 @@ namespace StatePattern
         {
             return _state;
         }
-
     }
 }

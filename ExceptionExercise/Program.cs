@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExceptionExercise
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int firstNumber = 0;
             int secondNumber = 0;
@@ -25,7 +21,7 @@ namespace ExceptionExercise
                 divResult = (double)firstNumber / (double)secondNumber;
                 Console.WriteLine("Result = " + divResult);
             }
-            catch(DivideByZeroException e)
+            catch (DivideByZeroException e)
             {
                 Console.WriteLine("Cannot divide by zero");
                 goto startAgain;

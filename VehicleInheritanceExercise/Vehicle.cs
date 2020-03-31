@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace VehicleInheritanceExercise
 {
-    class Vehicle
+    internal class Vehicle
     {
     }
 
-    class WheeledVehicles : Vehicle
+    internal class WheeledVehicles : Vehicle
     {
         private string color;
         private decimal price;
@@ -24,7 +20,7 @@ namespace VehicleInheritanceExercise
         }
     }
 
-    class FourWheeledVehicles : WheeledVehicles
+    internal class FourWheeledVehicles : WheeledVehicles
     {
         private string brandName;
         private int capacity;
@@ -44,7 +40,6 @@ namespace VehicleInheritanceExercise
 
         public FourWheeledVehicles()
         {
-
         }
     }
 }

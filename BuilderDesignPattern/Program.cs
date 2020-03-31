@@ -2,9 +2,9 @@
 
 namespace BuilderDesignPattern
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var vehicleCreator = new VehicleCreator(new FordExplorerBuilder());
             vehicleCreator.CreateVehicle();

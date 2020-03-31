@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using StatePattern.AnotherExample.Interface;
+﻿using StatePattern.AnotherExample.Interface;
+using System;
 
 namespace StatePattern.AnotherExample
 {
@@ -24,15 +22,18 @@ namespace StatePattern.AnotherExample
         {
             return _orderState.CanCancel(this);
         }
+
         public void Cancel()
         {
             if (CanCancel())
                 _orderState.Cancel(this);
         }
+
         public bool CanShip()
         {
             return _orderState.CanShip(this);
         }
+
         public void Ship()
         {
             if (CanShip())

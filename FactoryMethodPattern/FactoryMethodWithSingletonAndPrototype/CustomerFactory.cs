@@ -6,7 +6,7 @@ namespace FactoryMethodPattern.FactoryMethodWithSingletonAndPrototype
     {
         private static IDictionary<string, ICustomer> _customersType = null;
 
-        private static void  LoadCustomer()
+        private static void LoadCustomer()
         {
             _customersType = new Dictionary<string, ICustomer>()
             {
@@ -17,9 +17,9 @@ namespace FactoryMethodPattern.FactoryMethodWithSingletonAndPrototype
 
         public static ICustomer GenerateCustomer(string customerType)
         {
-            if (_customersType==null)
+            if (_customersType == null)
                 LoadCustomer();
-             return _customersType?[customerType].Clone();
+            return _customersType?[customerType].Clone();
         }
     }
 }

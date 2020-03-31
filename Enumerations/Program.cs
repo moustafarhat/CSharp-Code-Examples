@@ -2,16 +2,15 @@
 
 namespace Enumerations
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string weekDayName = WeekDay.Monday.ToString();
             WeekDay day = WeekDay.Sunday;
 
             Console.WriteLine((int)day);
         }
-
     }
 
     internal enum WeekDay

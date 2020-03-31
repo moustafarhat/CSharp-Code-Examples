@@ -17,16 +17,21 @@
 
     public class Database : IDatabase
     {
-        public void Add() { }
+        public void Add()
+        {
+        }
 
-        public void AddExistingCustomer() { }
+        public void AddExistingCustomer()
+        {
+        }
 
-        public void AnotherExtension() { }
+        public void AnotherExtension()
+        {
+        }
     }
 
     public interface IDatabase
     {
         void Add();
     }
-
 }

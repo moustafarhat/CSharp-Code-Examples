@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ThisKeyword
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Person person = new Person();
-            person.DisplayName("James","Morrison");
+            person.DisplayName("James", "Morrison");
         }
     }
 
-    class Person
+    internal class Person
     {
-        string firstName;
-        string lastName;
+        private string firstName;
+        private string lastName;
 
         public void DisplayName()
         {

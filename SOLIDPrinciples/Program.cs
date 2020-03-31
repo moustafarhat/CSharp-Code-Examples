@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using Solid.OpenClosed;
+﻿using Solid.OpenClosed;
 using SOLIDPrinciples.DependencyInversion;
 using SOLIDPrinciples.InterfaceSegregation;
 using SOLIDPrinciples.Liskov;
 using SOLIDPrinciples.SingleResponsibility;
+using System;
+using System.Collections.Generic;
 
 namespace SOLIDPrinciples
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("SOLID Principles:");
 

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CommandsPattern.interfaces;
+﻿using CommandsPattern.interfaces;
 
 namespace CommandsPattern
 {
-    public class Deposit: ITransaction
+    public class Deposit : ITransaction
 
     {
         private readonly Account _account;
@@ -29,4 +26,3 @@ namespace CommandsPattern
         }
     }
 }
-

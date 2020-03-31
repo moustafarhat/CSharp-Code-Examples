@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CompositePattern.Example1
 {
@@ -36,7 +35,9 @@ namespace CompositePattern.Example1
     /// </summary>
     public class VanillaCola : SoftDrink
     {
-        public VanillaCola(int calories) : base(calories) { }
+        public VanillaCola(int calories) : base(calories)
+        {
+        }
     }
 
     /// <summary>
@@ -44,7 +45,9 @@ namespace CompositePattern.Example1
     /// </summary>
     public class CherryCola : SoftDrink
     {
-        public CherryCola(int calories) : base(calories) { }
+        public CherryCola(int calories) : base(calories)
+        {
+        }
     }
 
     /// <summary>
@@ -52,7 +55,9 @@ namespace CompositePattern.Example1
     /// </summary>
     public class StrawberryRootBeer : SoftDrink
     {
-        public StrawberryRootBeer(int calories) : base(calories) { }
+        public StrawberryRootBeer(int calories) : base(calories)
+        {
+        }
     }
 
     /// <summary>
@@ -60,7 +65,9 @@ namespace CompositePattern.Example1
     /// </summary>
     public class VanillaRootBeer : SoftDrink
     {
-        public VanillaRootBeer(int calories) : base(calories) { }
+        public VanillaRootBeer(int calories) : base(calories)
+        {
+        }
     }
 
     /// <summary>
@@ -68,16 +75,19 @@ namespace CompositePattern.Example1
     /// </summary>
     public class LemonLime : SoftDrink
     {
-        public LemonLime(int calories) : base(calories) { }
+        public LemonLime(int calories) : base(calories)
+        {
+        }
     }
-
 
     /// <summary>
     /// Composite class
     /// </summary>
     public class Cola : SoftDrink
     {
-        public Cola(int calories) : base(calories) { }
+        public Cola(int calories) : base(calories)
+        {
+        }
     }
 
     /// <summary>
@@ -85,15 +95,18 @@ namespace CompositePattern.Example1
     /// </summary>
     public class RootBeer : SoftDrink
     {
-        public RootBeer(int calories) : base(calories) { }
+        public RootBeer(int calories) : base(calories)
+        {
+        }
     }
-
 
     /// <summary>
     /// Composite class, root node
     /// </summary>
     public class SodaWater : SoftDrink
     {
-        public SodaWater(int calories) : base(calories) { }
+        public SodaWater(int calories) : base(calories)
+        {
+        }
     }
 }

@@ -1,13 +1,12 @@
-﻿using System;
-using CompositePattern.Example1;
+﻿using CompositePattern.Example1;
+using System;
 
 namespace CompositePattern
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-
             var colas = new Cola(210);
             colas.Flavors.Add(new VanillaCola(215));
             colas.Flavors.Add(new CherryCola(210));
@@ -26,7 +25,6 @@ namespace CompositePattern
             sodaWater.DisplayCalories();
 
             Console.ReadKey();
-
 
             //var client = new Client();
 

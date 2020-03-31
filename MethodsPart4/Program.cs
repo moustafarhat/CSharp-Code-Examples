@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MethodsPart4
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string guestName = "";
 
@@ -20,15 +16,14 @@ namespace MethodsPart4
                 WelcomeGuest();
             else
                 WelcomeGuest(guestName);
-
         }
 
-        static void WelcomeGuest()
+        private static void WelcomeGuest()
         {
             Console.WriteLine("Okay, we hope you enjoy staying at our hotel");
         }
 
-        static void WelcomeGuest(string name)
+        private static void WelcomeGuest(string name)
         {
             Console.WriteLine($"Thank you {name}, we hope you enjoy staying at our hotel");
         }

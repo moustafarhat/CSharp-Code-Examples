@@ -25,7 +25,7 @@ namespace SOLIDPrinciples.DependencyInversion
             }
         }
 
-        // Bad: We are relying on the customer to say that we 
+        // Bad: We are relying on the customer to say that we
         // are using a File Logger, rather than another type of
         // logger, e.g. EmailLogger.
         internal class Customer
@@ -44,7 +44,6 @@ namespace SOLIDPrinciples.DependencyInversion
                 }
             }
         }
-
 
         // Good: We pass in a Logger interface to the customer
         // so it doesnt know what type of logger it is

@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConditionalStatmentsIF
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var x = 5;
             var y = 7;
@@ -24,10 +20,10 @@ namespace ConditionalStatmentsIF
             {
                 Console.WriteLine("Number one is less than number two");
             }
-            else 
+            else
             {
                 Console.WriteLine("They matches!!");
             }
-         }
+        }
     }
 }

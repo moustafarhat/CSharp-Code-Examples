@@ -2,10 +2,10 @@
 
 namespace AbstractFactoryPattern.Example1.Samsung
 {
-    /// <summary>  
-    /// The 'ProductA2' class  
-    /// </summary>  
-    class SamsungGalaxy : ISmartPhone
+    /// <summary>
+    /// The 'ProductA2' class
+    /// </summary>
+    internal class SamsungGalaxy : ISmartPhone
     {
         public string GetModelDetails()
         {

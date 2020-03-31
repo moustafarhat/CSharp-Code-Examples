@@ -1,6 +1,6 @@
 ﻿namespace SOLIDPrinciples
 {
-    interface IPrinciple
+    internal interface IPrinciple
     {
         string Principle();
     }

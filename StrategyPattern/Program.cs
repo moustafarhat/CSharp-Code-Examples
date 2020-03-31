@@ -1,15 +1,15 @@
-﻿using System;
-using StrategyPattern.Operations;
+﻿using StrategyPattern.Operations;
+using System;
 
 namespace StrategyPattern
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //Sum Operation
-            var add= new Context(new SumOperation());
-            Console.WriteLine(add.ExecuteOperation(3,4));
+            var add = new Context(new SumOperation());
+            Console.WriteLine(add.ExecuteOperation(3, 4));
 
             //Sub Operation
             var sub = new Context(new SubOperation());

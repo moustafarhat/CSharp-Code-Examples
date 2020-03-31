@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CarsExercise
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Mercedes mer = new Mercedes();
             mer.DisplayInfo();
         }
     }
 
-    class Cars
+    internal class Cars
     {
         private decimal _price;
         protected int MaxSpeed;
@@ -23,7 +19,7 @@ namespace CarsExercise
 
         protected decimal Price
         {
-            get { return _price; }
+            get => _price;
             set { _price = value; }
         }
 
@@ -37,7 +33,7 @@ namespace CarsExercise
         }
     }
 
-    class Mercedes : Cars
+    internal class Mercedes : Cars
     {
         public override void DisplayInfo()
         {

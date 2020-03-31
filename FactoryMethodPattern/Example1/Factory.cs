@@ -16,7 +16,7 @@ namespace FactoryMethodPattern.Example1
             EventViewer
         }
 
-        class FileLogger : ILogger
+        private class FileLogger : ILogger
         {
             public void Log(string message)
             {
@@ -24,7 +24,7 @@ namespace FactoryMethodPattern.Example1
             }
         }
 
-        class DatabaseLogger : ILogger
+        private class DatabaseLogger : ILogger
         {
             public void Log(string message)
             {
@@ -32,7 +32,7 @@ namespace FactoryMethodPattern.Example1
             }
         }
 
-        class EventViewerLogger : ILogger
+        private class EventViewerLogger : ILogger
         {
             public void Log(string message)
             {
@@ -48,10 +48,13 @@ namespace FactoryMethodPattern.Example1
                 {
                     case LoggerType.Database:
                         return new DatabaseLogger();
+
                     case LoggerType.EventViewer:
                         return new EventViewerLogger();
+
                     case LoggerType.File:
                         return new FileLogger();
+
                     default:
                         return new FileLogger();
                 }

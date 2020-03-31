@@ -1,29 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Scope
+﻿namespace Scope
 {
-    class Dogs
+    internal class Dogs
     {
-        string dogBreed;
-        string dogName;
-        string dogColor;
-        string trainerName;
+        private string dogBreed;
+        private string dogName;
+        private string dogColor;
+        private string trainerName;
 
         public void TrainDog()
         {
-            
             trainerName = "Daniel";
-           
         }
 
         public void FeedDog()
         {
             string foodName;
-            
         }
     }
 }

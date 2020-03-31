@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NestedClasses
+﻿namespace NestedClasses
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Animals animal = new Animals();
             Animals.Dogs dog = new Animals.Dogs();
             Animals.Cats cat = new Animals.Cats();
-            
         }
     }
 
-    class Animals
+    internal class Animals
     {
         public string animalName;
         public string animalCountry;
@@ -32,6 +25,5 @@ namespace NestedClasses
         {
             public string catName;
         }
-
     }
 }

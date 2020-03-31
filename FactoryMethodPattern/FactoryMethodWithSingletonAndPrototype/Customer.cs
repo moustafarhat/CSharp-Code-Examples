@@ -9,6 +9,7 @@ namespace FactoryMethodPattern.FactoryMethodWithSingletonAndPrototype
         public decimal BillAmount { get; set; }
         public DateTime BillDate { get; set; }
         public string Address { get; set; }
+
         public void Validate()
         {
             throw new NotImplementedException();

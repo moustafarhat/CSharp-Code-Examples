@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using StatePattern.AnotherExample.Interface;
+﻿using StatePattern.AnotherExample.Interface;
+using System;
 
 namespace StatePattern.AnotherExample
 {

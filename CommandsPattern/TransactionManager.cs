@@ -1,8 +1,6 @@
-﻿using System;
+﻿using CommandsPattern.interfaces;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using CommandsPattern.interfaces;
 
 namespace CommandsPattern
 {

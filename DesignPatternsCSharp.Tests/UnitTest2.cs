@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using Xunit;
+﻿using Xunit;
 
 namespace DesignPatternsCSharp.Tests
 {
@@ -9,7 +7,6 @@ namespace DesignPatternsCSharp.Tests
         [Fact]
         public void TestMethod1()
         {
-            
         }
     }
 }

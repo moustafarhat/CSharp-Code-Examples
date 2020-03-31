@@ -1,14 +1,14 @@
-﻿using System;
-using AbstractFactoryPattern.Example1;
+﻿using AbstractFactoryPattern.Example1;
 using AbstractFactoryPattern.Example1.interfaces;
 using AbstractFactoryPattern.Example1.Nokia;
 using AbstractFactoryPattern.Example1.Samsung;
+using System;
 
 namespace AbstractFactoryPattern
 {
     public static class Program
     {
-        static void Main()
+        private static void Main()
         {
             IMobilePhone nokiaMobilePhone = new Nokia();
             var nokiaClient = new MobileClient(nokiaMobilePhone);
@@ -27,6 +27,4 @@ namespace AbstractFactoryPattern
             Console.ReadKey();
         }
     }
- 
 }
-

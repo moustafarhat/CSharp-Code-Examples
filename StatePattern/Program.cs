@@ -1,11 +1,11 @@
-﻿using System;
-using StatePattern.States;
+﻿using StatePattern.States;
+using System;
 
 namespace StatePattern
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var context = new Context();
 

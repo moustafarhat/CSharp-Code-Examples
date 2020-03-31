@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace BuilderDesignPattern
 {
@@ -12,10 +11,12 @@ namespace BuilderDesignPattern
         public string Body { get; set; }
         public int Doors { get; set; }
         public List<string> Accessories { get; set; }
+
         public Vehicle()
         {
             Accessories = new List<string>();
         }
+
         public void ShowInfo()
         {
             Console.WriteLine("Model: {0}", Model);

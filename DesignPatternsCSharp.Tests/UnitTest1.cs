@@ -1,6 +1,4 @@
-using System;
 using Xunit;
-using Xunit.Sdk;
 
 namespace DesignPatternsCSharp.Tests
 {
@@ -8,14 +6,11 @@ namespace DesignPatternsCSharp.Tests
     {
         public UnitTest1()
         {
-
         }
-
 
         [Fact]
         public void Test1()
         {
-          
         }
     }
 }
