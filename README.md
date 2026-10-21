@@ -74,4 +74,4 @@ This repository started in 2019–2020 as my C# learning notebook: about 100 sma
 - fixes bugs from the originals, such as integer division in the Strategy calculator (`3 / 4` returned `0`)
 - keeps console output out of the library, so every behaviour can be asserted on
 
-The original examples are preserved under the [`legacy-2020`](https://github.com/moustafarhat/CSharp-Code-Examples/tree/legacy-2020) tag.
+The original examples are preserved in the git history: [browse them at commit `48fa7b1`](https://github.com/moustafarhat/CSharp-Code-Examples/tree/48fa7b195e087f1f7fa0071c2403c0d9be11e9d4).
